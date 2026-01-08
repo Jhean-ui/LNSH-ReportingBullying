@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Laak National High School - Bullying Report Form</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, rgba(116,235,213,0.7), rgba(172,182,229,0.7)),
+                  url('https://tse4.mm.bing.net/th/id/OIP.M5f4yC5fnZkHOoC0MAWyQgHaHA?rs=1&pid=ImgDetMain&o=7&rm=3') no-repeat center center fixed;
+      background-size: cover;
+      backdrop-filter: blur(6px);
+    }
+
+    .container {
+      max-width: 750px;
+      background: rgba(255,255,255,0.95);
+      margin: 50px auto;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(255,255,255,0.85);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      margin-bottom: 25px;
+    }
+
+    .header img {
+      width: 120px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    .header-text {
+      flex: 1;
+      text-align: center;
+    }
+
+    .header-text h1 {
+      color: #2c3e50;
+      font-size: 26px;
+      margin: 0;
+    }
+
+    .header-text h2 {
+      color: #555;
+      font-size: 18px;
+      margin-top: 5px;
+    }
+
+    .divider {
+      margin: 15px auto 0;
+      width: 80%;
+      height: 3px;
+      background: linear-gradient(to right, #4CAF50, #74ebd5);
+      border-radius: 2px;
+    }
+
+    .confidential {
+      font-size: 14px;
+      color: #555;
+      background: #f9f9f9;
+      padding: 12px;
+      border-left: 4px solid #4CAF50;
+      border-radius: 5px;
+      margin: 20px 0;
+      text-align: left;
+    }
+
+    .section-title {
+      background: linear-gradient(to right, #74ebd5, #4CAF50);
+      padding: 12px;
+      border-radius: 8px;
+      color: #fff;
+      margin-top: 25px;
+      font-weight: bold;
+      font-size: 16px;
+      text-align: left;
+    }
+
+    label {
+      display: block;
+      margin: 12px 0 5px;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 18px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    button {
+      width: 100%;
+      background: linear-gradient(to right, #4CAF50, #2ecc71);
+      color: white;
+      border: none;
+      font-size: 18px;
+      padding: 14px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .privacy {
+      font-size: 13px;
+      color: #555;
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    small {
+      display: block;
+      color: #555;
+      margin-top: -10px;
+      margin-bottom: 15px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- HEADER WITH LOGOS -->
+  <div class="header">
+    <img src="https://tse3.mm.bing.net/th/id/OIP.gYNDFrB74PF14sBY6VXwBgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="School Logo">
+    <div class="header-text">
+      <h1>Laak National High School</h1>
+      <h2>Bullying Report Form</h2>
+      <div class="divider"></div>
+    </div>
+    <img src="https://png.pngtree.com/png-clipart/20190520/original/pngtree-stop-bullying-no-bullying-logo-vector-illustration-png-image_4011436.jpg" alt="Stop Bullying Logo">
+  </div>
+
+  <div class="confidential">
+    This form allows victims and witnesses to report incidents confidentially.
+    All submissions will be carefully reviewed by a <strong>trusted school official</strong>
+    who is committed to protecting students’ rights and ensuring fairness.
+  </div>
+
+  <form action=https://script.google.com/macros/s/AKfycbxT5fT-EaOzKpHMJlyxgrdNLQtRkgBPgedmbwS4MD8QHP-wMf1WO93yoOlpxLkUIbZcyw/exec method="POST">
+
+    <div class="section-title">📋 Reporter Information</div>
+
+    <label>Name (optional)</label>
+    <input type="text" name="name" placeholder="Your name">
+
+    <label>Email or Phone Number <span style="color:red">*</span></label>
+    <input type="text" name="contact" required placeholder="Email or phone number">
+
+    <label>Grade</label>
+    <select name="grade" required>
+      <option value="">Select grade</option>
+      <option>6</option><option>7</option><option>8</option>
+      <option>9</option><option>10</option><option>11</option><option>12</option>
+    </select>
+
+    <label>Are you a:</label>
+    <select name="role" required>
+      <option value="Victim">Victim</option>
+      <option value="Witness">Witness</option>
+    </select>
+
+    <div class="section-title">📝 Incident Details</div>
+
+    <label>Please describe what happened in your own words.</label>
+    <textarea name="description" rows="5" required></textarea>
+
+    <label>Type of Bullying</label>
+    <select name="bullying_type" required>
+      <option value="">Select type</option>
+      <option>Verbal</option>
+      <option>Physical</option>
+      <option>Cyberbullying</option>
+      <option>Social Exclusion</option>
+      <option>Other</option>
+    </select>
+
+    <label>Name of person(s) involved (optional)</label>
+    <input type="text" name="person_involved" placeholder="You may leave this blank">
+    <small>You may leave this blank if you are unsure or uncomfortable sharing this information.</small>
+
+    <label>Where did it happen?</label>
+    <input type="text" name="location" required>
+
+    <label>Date of Incident</label>
+    <input type="date" name="date" required>
+
+    <button type="submit">Submit Report</button>
+
+    <div class="privacy">
+      This report is confidential and will only be accessed by authorized school personnel.
+    </div>
+
+  </form>
+</div>
+
+</body>
+</html>
